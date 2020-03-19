@@ -203,11 +203,11 @@ Here's an example using `<IntlProvider>`, `<Formatted*>` components, and the imp
 ```tsx
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {injectIntl, IntlProvider, FormattedRelative} from 'react-intl';
+import {injectIntl, IntlProvider, FormattedRelativeTime} from 'react-intl';
 
 const PostDate = injectIntl(({date, intl}) => (
   <span title={intl.formatDate(date)}>
-    <FormattedRelative value={date} />
+    <FormattedRelativeTime value={date} />
   </span>
 ));
 
